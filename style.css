@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  background-color: hsl(180deg 100% 50%);
+  user-select: none;
+}
+body h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-family: monospace;
+}
+body h1 .md {
+  margin-right: 80px;
+  color: #b50000;
+}
+body h1 .mg {
+  margin-left: 80px;
+  color: #007200;
+}
+.settings {
+  width: 100%;
+  height: 23px;
+  background-color: #0044ff91;
+}
+.settings .set {
+  width: 30%;
+  margin-left: 3.33334%;
+  float: left;
+  font-weight: bold;
+}
+settings .set input {
+  cursor: pointer;
+  width: 60px;
+}
+.score {
+  width: 100%;
+  height: 42px;
+  background-color: #73ff00a4;
+}
+.score .sc {
+  border-right: 1.5px solid #000;
+}
+.score .qa {
+  border-left: 1.5px solid #000;
+}
+.score *,
+.yesno * {
+  height: 100%;
+  float: left;
+  font-family: monospace;
+  font-size: xxx-large;
+  font-weight: bold;
+  text-align: center;
+}
+.score * {
+  width: calc(50% - 3px);
+}
+
+body .qus {
+  width: 100%;
+  height: calc(100vh - 130px);
+  display: grid;
+  place-items: center;
+}
+body .qus h1 {
+  user-select: text;
+  font-size: 4.75rem;
+  font-weight: bold;
+}
+body .qus h1 i.plus{
+  color: green;
+}
+body .qus h1 i.minus{
+  color: red;
+}
+
+.yesno {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+.yesno .speak{
+  background-color: #0084ff;
+}
+.yesno * {
+  font-size: xx-large;
+}
+.yesno .yes {
+  background-color: #00ff00;
+}
+.yesno .no {
+  background-color: red;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>🤯Mattha Darad</title>
+</head>
+
+<body>
+    <h1><b class="md">Mattha🤕Darad</b><b class="mg">Maths🧠Game</b></h1>
+    <div class="settings">
+        <div class="set size">Numbers in question: <input type="number" value="3" min="2" max="15" onchange="level.size=this.value"></div>
+        <div class="set length">Length of numbers: <input type="number" value="4" min="2" max="12" onchange="level.len=this.value"></div>
+        <div class="set sub">Substraction Enabled: <input type="checkbox" onchange="level.sub=this.checked"></div>
+    </div>
+    <div class="score">
+        <div class="sc">Score: 0</div>
+        <div class="qa">Questions Asked: 0</div>
+    </div>
+    <div class="qus"><h1></h1></div>
+    <div class="yesno">
+        <button class="no" onclick="askQues()">Wrong</button>
+        <button class="speak" onclick="spkNext()">Speak</button>
+        <button class="yes" onclick="incScore()">Right</button>
+    </div>
+    <script defer src="./main.js"></script>
+</body>
+
+</html>
